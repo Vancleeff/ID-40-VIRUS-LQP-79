@@ -94,6 +94,10 @@ void nextLevelStart()
     nextLevelVisible = true;
     pressKeyVisible = false;
     gameOverAndStageFase = 4;
+    if(gameType == STATE_GAME_CONTINUE)
+    {
+      gameType = STATE_GAME_NEW;
+    }
   }
   else
     {
